@@ -24,6 +24,7 @@ Requires: initscripts >= 8.36
 Requires(post): chkconfig
 Requires: openssl >= 1.0.1
 BuildRequires: openssl-devel >= 1.0.1
+BuildRequires: cmake >= 3.0.0
 %endif
 
 %if 0%{?rhel} == 7
@@ -32,6 +33,7 @@ Epoch: %{epoch}
 Requires(pre): shadow-utils
 Requires: openssl >= 1.0.2
 BuildRequires: openssl-devel >= 1.0.2
+BuildRequires: cmake >= 3.0.0
 %define dist .el7
 %endif
 
@@ -40,6 +42,7 @@ BuildRequires: openssl-devel >= 1.0.2
 Epoch: %{epoch}
 Requires(pre): shadow-utils
 BuildRequires: openssl-devel >= 1.1.1
+BuildRequires: cmake >= 3.0.0
 %define _debugsource_template %{nil}
 %endif
 
