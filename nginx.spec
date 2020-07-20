@@ -44,6 +44,7 @@ Requires(pre): shadow-utils
 BuildRequires: openssl-devel >= 1.1.1
 BuildRequires: cmake >= 3.0.0
 BuildRequires: perl
+BuildRequires: go
 %define _debugsource_template %{nil}
 %endif
 
