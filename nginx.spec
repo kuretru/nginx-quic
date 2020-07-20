@@ -120,6 +120,12 @@ sed -e 's|%%DEFAULTSTART%%||g' -e 's|%%DEFAULTSTOP%%|0 1 2 3 4 5 6|g' \
 unzip -q %{SOURCE14}
 
 %build
+cd boringssl-master
+%{__mkdir} build
+cd build
+cmake ..
+make
+cd ../../
 ./configure %{BASE_CONFIGURE_ARGS} \
     --with-http_v3_module \
     --with-openssl=./boringssl-master/ \
