@@ -1,0 +1,5 @@
+# Configuration file for the nginx-debug service.
+
+NGINX=/usr/sbin/nginx-quic-debug
+CONFFILE=/etc/nginx-quic/nginx.conf
+LOCKFILE=/var/lock/subsys/nginx-quic-debug
